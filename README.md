@@ -399,7 +399,7 @@ Este projeto está sob a licença MIT.
 
 ## 👤 Autor
 
-Desenvolvido para o desafio Serverless da Stefanini.
+Desenvolvido por Alex Sander Correa Martins.
 
 ---
 
