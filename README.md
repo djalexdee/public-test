@@ -41,7 +41,7 @@ Esta é a forma mais fácil de começar, usando Docker para o PostgreSQL e serve
 1. Clone o repositório:
 ```bash
 git clone <url-do-repositório>
-cd stefanini-test
+cd public-test
 ```
 
 2. Configure as variáveis de ambiente:
