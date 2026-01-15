@@ -4,12 +4,12 @@ services:
   # Banco de dados PostgreSQL
   postgres:
     image: postgres:14-alpine
-    container_name: stefanini-postgres
+    container_name: public-postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: stefanini_db
+      POSTGRES_DB: public_db
     ports:
       - "5432:5432"
     volumes:
@@ -25,12 +25,12 @@ services:
   #   build:
   #     context: .
   #     dockerfile: Dockerfile
-  #   container_name: stefanini-app
+  #   container_name: public-app
   #   restart: unless-stopped
   #   ports:
   #     - "3000:3000"
   #   environment:
-  #     DATABASE_URL: postgresql://postgres:postgres@postgres:5432/stefanini_db?schema=public
+  #     DATABASE_URL: postgresql://postgres:postgres@postgres:5432/public_db?schema=public
   #     JWT_SECRET: your-secret-key-change-in-production
   #     PORT: 3000
   #   depends_on:
