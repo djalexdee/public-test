@@ -56,12 +56,12 @@ O Docker Compose está configurado para criar um banco PostgreSQL com as seguint
 - **Porta**: 5432
 - **Usuário**: postgres
 - **Senha**: postgres
-- **Database**: stefanini_db
+- **Database**: public_db
 
 ### String de Conexão
 
 ```
-postgresql://postgres:postgres@localhost:5432/stefanini_db?schema=public
+postgresql://postgres:postgres@localhost:5432/public_db?schema=public
 ```
 
 ## 📦 Volumes
@@ -79,7 +79,7 @@ docker-compose down -v
 ### Acessar o container PostgreSQL
 
 ```bash
-docker exec -it stefanini-postgres psql -U postgres -d stefanini_db
+docker exec -it public-postgres psql -U postgres -d public_db
 ```
 
 ### Executar migrações Prisma
@@ -114,7 +114,7 @@ ports:
 E atualize a `DATABASE_URL` no `.env`:
 
 ```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5433/stefanini_db?schema=public"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5433/public_db?schema=public"
 ```
 
 ### Container não inicia
