@@ -1,5 +1,5 @@
 {
-  "name": "stefanini-test",
+  "name": "public-test",
   "version": "1.0.0",
   "description": "Serverless Challenge - AWS Lambda com NestJS, Prisma e PostgreSQL",
   "author": "",

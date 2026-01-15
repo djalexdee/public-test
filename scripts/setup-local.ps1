@@ -27,7 +27,7 @@ $ready = $false
 
 while ($attempt -lt $maxAttempts -and -not $ready) {
     try {
-        docker exec stefanini-postgres pg_isready -U postgres | Out-Null
+        docker exec public-postgres pg_isready -U postgres | Out-Null
         if ($LASTEXITCODE -eq 0) {
             $ready = $true
             Write-Host "✅ PostgreSQL está pronto!" -ForegroundColor Green

@@ -22,7 +22,7 @@ cp .env.example .env
 
 3. Edite o arquivo `.env` com suas configurações:
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/stefanini_db?schema=public"
+DATABASE_URL="postgresql://user:password@localhost:5432/public_db?schema=public"
 JWT_SECRET="your-secret-key-change-in-production"
 PORT=3000
 ```
@@ -58,8 +58,8 @@ No arquivo `serverless.yml`, configure as variáveis de ambiente ou use AWS Syst
 
 ```yaml
 environment:
-  DATABASE_URL: ${ssm:/stefanini/database_url}
-  JWT_SECRET: ${ssm:/stefanini/jwt_secret}
+  DATABASE_URL: ${ssm:/public/database_url}
+  JWT_SECRET: ${ssm:/public/jwt_secret}
 ```
 
 ### 3. Build da Aplicação

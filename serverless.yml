@@ -1,4 +1,4 @@
-service: stefanini-test
+service: public-test
 
 frameworkVersion: '3'
 
