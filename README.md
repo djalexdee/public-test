@@ -51,7 +51,7 @@ cp env.example .env
 
 Edite o arquivo `.env` com as configurações para Docker:
 ```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/stefanini_db?schema=public"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/public_db?schema=public"
 JWT_SECRET="your-secret-key-change-in-production"
 PORT=3000
 ```
@@ -100,7 +100,7 @@ Se você já tem PostgreSQL instalado localmente:
 1. Clone o repositório:
 ```bash
 git clone <url-do-repositório>
-cd stefanini-test
+cd public-test
 ```
 
 2. Instale as dependências:
@@ -115,7 +115,7 @@ cp env.example .env
 
 Edite o arquivo `.env` com suas configurações:
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/stefanini_db?schema=public"
+DATABASE_URL="postgresql://user:password@localhost:5432/public_db?schema=public"
 JWT_SECRET="your-secret-key-change-in-production"
 PORT=3000
 ```
@@ -339,7 +339,7 @@ Configure as seguintes variáveis de ambiente no Lambda:
 ## 📁 Estrutura do Projeto
 
 ```
-stefanini-test/
+public-test/
 ├── src/
 │   ├── domain/                 # Camada de domínio
 │   │   ├── entities/          # Entidades
